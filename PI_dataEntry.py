@@ -8,13 +8,12 @@
 import sys
 import clr
 import pandas as pd
-from decimal import Decimal
 
 # Osisoft Libraries 
 sys.path.append("C:\\Program Files\\PIPC\\AF\\PublicAssemblies\\4.0\\")
 clr.AddReference("Osisoft.AFSDK")
 from Osisoft.AF.PI import *
-from Osisoft.A.Search import *
+from Osisoft.AF.Search import *
 from Osisoft.AF.Asset import *
 from Osisoft.AF.Data import *
 
