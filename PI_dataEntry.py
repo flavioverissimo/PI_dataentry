@@ -36,7 +36,6 @@ def connectToPIServer(piserver):
 # Inserting a new value 
 def setValueOnTag(tag, value):
     try:
-        
         # inserting in afValue the AFValue() class
         afValue = AFValue()
         
