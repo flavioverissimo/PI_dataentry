@@ -10,10 +10,9 @@ import clr
 import pandas as pd
 
 # Osisoft Libraries 
-sys.path.append("C:\\Program Files\\PIPC\\AF\\PublicAssemblies\\4.0\\")
-clr.AddReference("Osisoft.AFSDK")
+sys.path.append("C:\\Program Files (x86)\\PIPC\\AF\\PublicAssemblies\\4.0\\")
+clr.AddReference("OSIsoft.AFSDK")
 from Osisoft.AF.PI import *
-from Osisoft.AF.Search import *
 from Osisoft.AF.Asset import *
 from Osisoft.AF.Data import *
 
