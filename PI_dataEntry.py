@@ -65,17 +65,25 @@ connectToPIServer("server_name")
 print("Start Message")
 for tag in mappedTags:
     try:
+        if currentServer == None:
+            print("This server doesn't exist, try to use another")
+            break
+            
         # phrase to context the user about the current tag
         print("Insert the value on the tag: " + tag)
         
         # getting input value
-        value = float(input("Insert a value: "))
+        value = input("Insert a value: ")
         
-        # using this function to insert value on the tag
-        setValueOnTag(tag, value)
-        
-        # if it was ok, so return success to the user
-        print("Success")
+        if value != '':
+            # using this function to insert value on the tag
+            setValueOnTag(tag, float(value))
+            
+            # if it was ok, so return success to the user
+            print("Success")
+        else:
+            # if it wasn't ok, so return fail to the user
+            print("Failed")
     except: 
         # if it wasn't ok, so return fail to the user
         print("Failed")
